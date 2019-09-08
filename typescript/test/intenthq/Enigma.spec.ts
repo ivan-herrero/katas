@@ -1,5 +1,5 @@
-import { describe } from "mocha"
 import { expect } from "chai"
+import { describe } from "mocha"
 
 import decipher from "../../src/intenthq/Enigma"
 

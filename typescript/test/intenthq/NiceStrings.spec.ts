@@ -1,7 +1,7 @@
-import { describe } from 'mocha'
-import { expect } from 'chai'
+import { expect } from "chai"
+import { describe } from "mocha"
 
-import nice from '../../src/intenthq/NiceStrings'
+import nice from "../../src/intenthq/NiceStrings"
 
 describe("NiceStrings", () => {
 
