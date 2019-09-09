@@ -31,9 +31,9 @@ export default (map: Map<number, string>) => (message: number[]): string => {
 
   let translation = message.reduce((prev, curr) => prev + curr, "")
 
-  Array.from(map).sort(sortByLongestKey).forEach(kv => {
-    translation = translation.replace(new RegExp(kv[0].toString(), "g"), kv[1])
-  })
+  Array.from(map).sort(sortByLongestKey).forEach(([key, value]) =>
+    translation = translation.replace(new RegExp(key.toString(), "g"), value)
+  )
 
   return translation
 }

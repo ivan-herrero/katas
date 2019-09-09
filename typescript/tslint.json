@@ -13,7 +13,8 @@
     }],
     "member-access": false,
     "interface-name": false,
-    "curly": false
+    "curly": false,
+    "trailing-comma": false
   },
   "rulesDirectory": []
 }
