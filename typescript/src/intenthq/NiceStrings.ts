@@ -24,11 +24,7 @@ export default (xs: string[]): number => {
   const twiceInARowReg = new RegExp("([a-zA-Z])\\1")
   const containsPairsReg = new RegExp("ab|cd|pq|xy")
 
-  const threeVowels = (s: string): boolean => threeVowelsReg.test(s)
-  const twiceInARow = (s: string): boolean => twiceInARowReg.test(s)
-  const containsPairs = (s: string): boolean => containsPairsReg.test(s)
-
-  const isNice = (s: string): boolean => threeVowels(s) && twiceInARow(s) && !containsPairs(s)
+  const isNice = (s: string): boolean => threeVowelsReg.test(s) && twiceInARowReg.test(s) && !containsPairsReg.test(s)
 
   return xs.map(isNice).filter(x => x).length
 }
