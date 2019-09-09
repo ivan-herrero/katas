@@ -17,6 +17,7 @@
     "ts-node": "^8.3.0"
   },
   "scripts": {
+    "run": "tsc",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "keywords": [],

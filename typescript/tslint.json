@@ -10,7 +10,10 @@
     "max-line-length": [true, {
       "limit": 120,
       "ignore-pattern": "//"
-    }]
+    }],
+    "member-access": false,
+    "interface-name": false,
+    "curly": false
   },
   "rulesDirectory": []
 }
